@@ -26,8 +26,8 @@ st.markdown("""
 # ---------- CACHED MODEL LOADER ----------
 @st.cache_resource
 def load_detector_model():
-    if os.path.exists('detector.h5'):
-        return load_model('detector.h5')
+    if os.path.exists('detector1.h5'):
+        return load_model('detector1.h5')
     return None
 
 # ---------- USER STORAGE ----------
@@ -134,7 +134,7 @@ def show_main_app():
 
     model = load_detector_model()
     if model is None:
-        st.error("Model file `detector.h5` not found. Please ensure `detector.h5` is in the project directory.")
+        st.error("Model file `detector1.h5` not found. Please ensure `detector1.h5` is in the project directory.")
         return
 
     file = st.file_uploader("Upload an image", type=['jpg', 'png', 'jpeg'])
