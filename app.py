@@ -9,7 +9,7 @@ from PIL import Image
 import numpy as np
 
 # ---------- CONFIG ----------
-st.set_page_config(page_title="REAIL", page_icon="LOGO.jpg", layout="centered")
+st.set_page_config(page_title="REAIL", page_icon="LOGO.jpeg", layout="centered")
 USERS_FILE = "users.json"
 DAILY_LIMIT = 5
 ADMIN_USERNAME = "admin"
@@ -45,7 +45,7 @@ if "username" not in st.session_state:
 
 # ---------- LANDING / AUTH ----------
 def show_landing():
-    st.image("LOGO.jpg", width=200)
+    st.image("LOGO.jpeg", width=200)
     st.markdown("<h1 style='text-align:center;'>REAIL</h1>", unsafe_allow_html=True)
     st.markdown("<p style='text-align:center;'>AI Image Detector — tell real from AI-generated, instantly.</p>", unsafe_allow_html=True)
     st.markdown("---")
