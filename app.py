@@ -120,7 +120,7 @@ def show_main_app():
             st.success("This is a demo — real payment integration coming soon!")
         return
 
-    model = load_model('detector.h5')
+    model = load_model('detector1.h5')
     file = st.file_uploader("Upload an image", type=['jpg', 'png', 'jpeg'])
 
     if file:
