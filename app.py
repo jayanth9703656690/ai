@@ -8,7 +8,7 @@ from PIL import Image
 import numpy as np
 
 # ---------- CONFIG ----------
-icon = "LOGO.jpg" if os.path.exists("LOGO.jpg") else "🔍"
+icon = "LOGO.jpeg" if os.path.exists("LOGO.jpeg") else "🔍"
 st.set_page_config(page_title="REAIL", page_icon=icon, layout="centered")
 USERS_FILE = "users.json"
 DAILY_LIMIT = 5
